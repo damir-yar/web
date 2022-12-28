@@ -1,0 +1,42 @@
+h1 {
+	font-size: 50px;
+	color: white;
+	-webkit-text-stroke: 1px blue;
+
+}
+
+img {
+  width: 80%;
+
+}
+
+.wrapper {
+  perspective: 1px;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: white;
+}
+
+
+
+.box {
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20vh 0;
+}
+
+.box.box-back {
+  transform: translateZ(0);
+  z-index: 99;
+  text-align: center;
+}
+.box.box-front {
+  width: 100%;
+  transform: translateZ(-1px) scale(2);
+}
